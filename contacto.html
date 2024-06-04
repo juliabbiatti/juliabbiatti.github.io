@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./imagenes/Tsukis_Odyssey_Logo.png"
+                alt="Logo"
+                width="180"
+                height="140"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="./personajes.html"
+                  >Personajes</a
+                >
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    <section class="contacto">
+        <h2 class="text-center fw-bold"> ¡Contáctanos! </h2>
+        <form action="" method="post" class="formulario">
+          <fieldset class="fieldset">
+            <legend class="legend"> Información del contacto</legend>
+    
+            <div class="form_group">
+              <label for="nombre" class="label">Nombre</label>
+              <input type="text" class="input" name="nombre" id="nombre">
+            </div>
+            <div class="form_group">
+              <label for="apellido" class="label">Apellido</label>
+              <input type="text" class="input" name="apellido" id="apellido">
+            </div>
+    
+            <div class="form_group">
+              <label for="clave" class="label">Contraseña</label>
+              <input type="password" class="input" name="clave" id="clave">
+            </div>
+
+            <div class="form_group">
+              <label for="edad" class="label">Edad</label>
+              <input type="number" class="input" name="edad" id="edad" min="18" max="100">
+            </div>
+    
+            <div class="form_group"> 
+              <label for="mensaje" class="label">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" rows="5" cols="20" minlength="10" maxlength="200"></textarea>
+            </div>
+    
+            <div class="form_group">
+              <label for="sitioWeb" class="label">Sitio Web</label>
+              <input type="url" class="input" name="sitioWeb" pattern="https?://.+" title="Por favor, ingrese una URL valida">
+            </div>
+    
+            <div class="form_group">
+              <label for="pais" class="label"> Pais </label>
+              <select name="pais" id="">
+                <option value="A"> Argentina</option>
+                <option value="C"> Chile</option>
+                <option value="B"> Bolivia</option>
+              </select>
+            </div>
+            <div>
+              <img src="./imagenes/tsuki picnic.jpg" alt="tsuki y amigos" class="imagentsuki">
+            </div>
+          </fieldset>
+    
+          <input type="submit" class="submit-enviar" value="Enviar formulario">
+    
+        </form>
+      </section>
+
+      <footer class="text-bg-dark p-3 text-center">
+        Copyright © HyperBeard, Inc. 2019-2024. All Rights Reserved.
+    </footer>
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
